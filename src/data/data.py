@@ -49,7 +49,21 @@ class Data:
         
         Args:
             lista1 (list): Primera lista ordenada
+
+            lista1 = [1, 3, 5, 7]
+        
             lista2 (list): Segunda lista ordenada
+
+            lista2 = [2, 4, 6, 8]
+
+            lista1 = [1, 3, 5, 7]
+
+
+        resultado = combinar_listas_ordenadas(lista1, lista2)
+        print(resultado)  [1, 2, 3, 4, 5, 6, 7, 8]
+
+        Con esta implementación, se combina eficientemente dos listas ordenadas en una sola lista ordenada.
+
             
         Returns:
             list: Lista combinada y ordenada
