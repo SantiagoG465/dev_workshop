@@ -6,7 +6,15 @@ class Geometria:
     
     def area_rectangulo(self, base, altura):
         """
-        Calcula el área de un rectángulo.
+        Calcula el área de un rectangulo.
+
+        base = 5
+        altura = 3
+
+        area = calcular_area_rectangulo(base, altura)
+
+        print(f"El area del rectangulo es: {area} unidades cuadradas")
+    
         
         Args:
             base (float): Longitud de la base del rectángulo
