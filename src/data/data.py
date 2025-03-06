@@ -5,16 +5,13 @@ class Data:
     """
     
     def invertir_lista(self, lista):
-        """
-        Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
+
+        lista_invertida = []
+        for i in range(len(lista) -1, 1, -1):
+            lista_invertida.append(lista[i])
+
+        return lista_invertida
         
-        Args:
-            lista (list): Lista a invertir
-            
-        Returns:
-            list: Lista con los elementos en orden inverso
-        """
-        pass
     
     def buscar_elemento(self, lista, elemento):
         """
@@ -62,7 +59,7 @@ class Data:
         resultado = combinar_listas_ordenadas(lista1, lista2)
         print(resultado)  [1, 2, 3, 4, 5, 6, 7, 8]
 
-        Con esta implementación, se combina eficientemente dos listas ordenadas en una sola lista ordenada.
+        Con esta implementación,  eficientemente dos listas ordenadas en una sola lista ordenada.
 
             
         Returns:
