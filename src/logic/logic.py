@@ -14,7 +14,12 @@ class Logica:
         Returns:
             bool: Resultado de a AND b
         """
-        pass
+        pass 
+        
+        logica = Logica()
+        resultado = logica.AND(True, False)
+        print(resultado) #Salida: False
+        
     
     def OR(self, a, b):
         """
