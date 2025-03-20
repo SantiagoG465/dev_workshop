@@ -14,37 +14,19 @@ class Logica:
     
     def NAND(self, a: bool, b: bool) -> bool:
        
-        return not (a and b)  # NAND = NOT (a AND b)
+        return not (a and b)  
     
     def NOR(self, a: bool, b: bool) -> bool:
        
-        return not (a or b)  # NOR = NOT (a OR b)
+        return not (a or b)  
     
-    def XNOR(self, a, b):
-        """
-        Implementa la operación lógica XNOR (NOT XOR).
+    def XNOR(self, a: bool, b: bool) -> bool:
         
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a XNOR b
-        """
-        pass
+        return not (a ^ b)  
     
-    def implicacion(self, a, b):
-        """
-        Implementa la operación lógica de implicación (a -> b).
+    def implicacion(self, a: bool, b: bool) -> bool:
         
-        Args:
-            a (bool): Primer valor booleano (antecedente)
-            b (bool): Segundo valor booleano (consecuente)
-            
-        Returns:
-            bool: Resultado de la implicación
-        """
-        pass
+        return (not a) or b  
     
     def bi_implicacion(self, a, b):
         """
