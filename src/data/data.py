@@ -77,7 +77,7 @@ class Data:
     def pop(self):
         if not self.is_empty():
             return self.items.pop()
-        return None  # O lanzar una excepción
+        return None  
 
     def peek(self):
         if not self.is_empty():
@@ -98,7 +98,7 @@ class Data:
     def dequeue(self):
         if not self.is_empty():
             return self.items.pop(0)
-        return None  # O lanzar una excepción
+        return None  
 
     def peek(self):
         if not self.is_empty():
