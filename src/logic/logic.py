@@ -19,14 +19,9 @@ class Logica:
     
     def OR(self, a, b):
         """
-        Implementa la operación lógica OR.
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a OR b
+        def operacion_or(a: bool, b: bool) -> bool:
+        return a or b
+ 
         """
         pass
     
