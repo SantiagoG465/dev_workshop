@@ -27,13 +27,9 @@ class Logica:
     
     def NOT(self, a):
         """
-        Implementa la operación lógica NOT.
-        
-        Args:
-            a (bool): Valor booleano
-            
-        Returns:
-            bool: Resultado de NOT a
+        def operacion_not(a: bool) -> bool:
+        return not a
+    
         """
         pass
     
