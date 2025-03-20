@@ -62,16 +62,12 @@ class Data:
     pass
     
     def encuentra_numero_faltante(self, lista):
-        """
-        Encuentra el número faltante en una lista de enteros del 1 al n.
+        n = len(lista) + 1
+       
+        suma_total = n * (n + 1) // 2
+        suma_lista = sum(lista)
+        return suma_total - suma_lista
         
-        Args:
-            lista (list): Lista de enteros del 1 al n con un número faltante
-            
-        Returns:
-            int: El número que falta en la secuencia
-        """
-        pass
     
     def es_subconjunto(self, conjunto1, conjunto2):
         """
