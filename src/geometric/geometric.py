@@ -72,44 +72,15 @@ class Geometria:
             raise ValueError("La pendiente es indefinida (división por cero).")
         return (y2 - y1) / (x2 - x1)
     
-def ecuacion_recta(self, x1, y1, x2, y2):
-        """
-        Obtiene los coeficientes de la ecuación de una recta en la forma Ax + By + C = 0.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            tuple: Coeficientes (A, B, C) de la ecuación de la recta
-        """
-        pass
+    def ecuacion_recta(self, x1: float, y1: float, x2: float, y2: float) -> tuple:
+        A = y2 - y1
+        B = x1 - x2
+        C = (x2 * y1) - (x1 * y2)
+        return A, B, C
     
-def area_poligono_regular(self, num_lados, lado, apotema):
-        """
-        Calcula el área de un polígono regular.
-        
-        Args:
-            num_lados (int): Número de lados del polígono
-            lado (float): Longitud de cada lado
-            apotema (float): Longitud de la apotema
-            
-        Returns:
-            float: Área del polígono regular
-        """
-        pass
+    def area_poligono_regular(self, num_lados: int, lado: float, apotema: float) -> float:
+        perimetro = num_lados * lado
+        return (perimetro * apotema) / 2
     
-def perimetro_poligono_regular(self, num_lados, lado):
-        """
-        Calcula el perímetro de un polígono regular.
-        
-        Args:
-            num_lados (int): Número de lados del polígono
-            lado (float): Longitud de cada lado
-            
-        Returns:
-            float: Perímetro del polígono regular
-        """
-        pass
+    def perimetro_poligono_regular(self, num_lados: int, lado: float) -> float:
+        return num_lados * lado
