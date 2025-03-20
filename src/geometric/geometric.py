@@ -1,6 +1,7 @@
 import math
 
 class Geometria:
+    
     def area_rectangulo(self, base: float, altura: float) -> float:
         return base * altura
 
@@ -10,56 +11,16 @@ class Geometria:
     def area_circulo(self, radio: float) -> float:
         return math.pi * radio**2
     
-def perimetro_rectangulo(base, altura):
-     return 2 * (base + altura)
-
-
-def area_circulo(self, radio):
-    class Geometria:
-        def area_circulo(self, radio: float) -> float:
-            return math.pi * radio**2
-
-
-def perimetro_circulo(self, radio):
-        """
-        Calcula el perímetro (circunferencia) de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Perímetro del círculo
-        """
-        pass
+    def perimetro_circulo(self, radio):
+     return 2 * math.pi * radio
     
-def area_triangulo(self, base, altura):
-        """
-        Calcula el área de un triángulo.
-        
-        Args:
-            base (float): Longitud de la base del triángulo
-            altura (float): Altura del triángulo
-            
-        Returns:
-            float: Área del triángulo
-        """
-        pass
+    def area_triangulo(self, base, altura):
+      return (base * altura) / 2
     
-def perimetro_triangulo(self, lado1, lado2, lado3):
-        """
-        Calcula el perímetro de un triángulo.
-        
-        Args:
-            lado1 (float): Longitud del primer lado
-            lado2 (float): Longitud del segundo lado
-            lado3 (float): Longitud del tercer lado
-            
-        Returns:
-            float: Perímetro del triángulo
-        """
-        pass
+    def perimetro_triangulo_equilatero(self, lado: float) -> float:
+        return 3 * lado
     
-def es_triangulo_valido(self, lado1, lado2, lado3):
+    def es_triangulo_valido(self, lado1, lado2, lado3):
         """
         Verifica si tres longitudes pueden formar un triángulo válido.
         Un triángulo es válido si la suma de las longitudes de dos lados
