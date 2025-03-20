@@ -1,31 +1,14 @@
 class Geometria:
-    """
-    Class with geometric exercises.
-    Include basic and funny operations in 2D and 3D.
-    """
+    def area_rectangulo(self, base: float, altura: float) -> float:
+        return base * altura
+geo = Geometria()
+base = 5
+altura = 3
+area = geo.area_rectangulo(base, altura)
+print(f"El área del rectángulo es: {area} unidades cuadradas")
     
-    def area_rectangulo(self, base, altura):
-        """
-        Calcula el área de un rectangulo.
-
-        base = 5
-        altura = 3
-
-        area = calcular_area_rectangulo(base, altura)
-
-        print(f"El area del rectangulo es: {area} unidades cuadradas")
     
-        
-        Args:
-            base (float): Longitud de la base del rectángulo
-            altura (float): Altura del rectángulo
-            
-        Returns:
-            float: Área del rectángulo
-        """
-        return base*altura
-    
-    def perimetro_rectangulo(self, base, altura):
+def perimetro_rectangulo(self, base, altura):
         """
         Calcula el perímetro de un rectángulo.
         
@@ -38,7 +21,7 @@ class Geometria:
         """
         pass
     
-    def area_circulo(self, radio):
+def area_circulo(self, radio):
         """
         Calcula el área de un círculo.
         
@@ -50,7 +33,7 @@ class Geometria:
         """
         pass
     
-    def perimetro_circulo(self, radio):
+def perimetro_circulo(self, radio):
         """
         Calcula el perímetro (circunferencia) de un círculo.
         
@@ -62,7 +45,7 @@ class Geometria:
         """
         pass
     
-    def area_triangulo(self, base, altura):
+def area_triangulo(self, base, altura):
         """
         Calcula el área de un triángulo.
         
@@ -75,7 +58,7 @@ class Geometria:
         """
         pass
     
-    def perimetro_triangulo(self, lado1, lado2, lado3):
+def perimetro_triangulo(self, lado1, lado2, lado3):
         """
         Calcula el perímetro de un triángulo.
         
@@ -89,7 +72,7 @@ class Geometria:
         """
         pass
     
-    def es_triangulo_valido(self, lado1, lado2, lado3):
+def es_triangulo_valido(self, lado1, lado2, lado3):
         """
         Verifica si tres longitudes pueden formar un triángulo válido.
         Un triángulo es válido si la suma de las longitudes de dos lados
@@ -105,7 +88,7 @@ class Geometria:
         """
         pass
     
-    def area_trapecio(self, base_mayor, base_menor, altura):
+def area_trapecio(self, base_mayor, base_menor, altura):
         """
         Calcula el área de un trapecio.
         
@@ -119,7 +102,7 @@ class Geometria:
         """
         pass
     
-    def area_rombo(self, diagonal_mayor, diagonal_menor):
+def area_rombo(self, diagonal_mayor, diagonal_menor):
         """
         Calcula el área de un rombo usando sus diagonales.
         
@@ -132,7 +115,7 @@ class Geometria:
         """
         pass
     
-    def area_pentagono_regular(self, lado, apotema):
+def area_pentagono_regular(self, lado, apotema):
         """
         Calcula el área de un pentágono regular.
         
@@ -145,7 +128,7 @@ class Geometria:
         """
         pass
     
-    def perimetro_pentagono_regular(self, lado):
+def perimetro_pentagono_regular(self, lado):
         """
         Calcula el perímetro de un pentágono regular.
         
@@ -157,7 +140,7 @@ class Geometria:
         """
         pass
     
-    def area_hexagono_regular(self, lado, apotema):
+def area_hexagono_regular(self, lado, apotema):
         """
         Calcula el área de un hexágono regular.
         
@@ -170,7 +153,7 @@ class Geometria:
         """
         pass
     
-    def perimetro_hexagono_regular(self, lado):
+def perimetro_hexagono_regular(self, lado):
         """
         Calcula el perímetro de un hexágono regular.
         
@@ -182,7 +165,7 @@ class Geometria:
         """
         pass
     
-    def volumen_cubo(self, lado):
+def volumen_cubo(self, lado):
         """
         Calcula el volumen de un cubo.
         
@@ -194,7 +177,7 @@ class Geometria:
         """
         pass
     
-    def area_superficie_cubo(self, lado):
+def area_superficie_cubo(self, lado):
         """
         Calcula el área de la superficie de un cubo.
         
@@ -206,7 +189,7 @@ class Geometria:
         """
         pass
     
-    def volumen_esfera(self, radio):
+def volumen_esfera(self, radio):
         """
         Calcula el volumen de una esfera.
         
@@ -218,7 +201,7 @@ class Geometria:
         """
         pass
     
-    def area_superficie_esfera(self, radio):
+def area_superficie_esfera(self, radio):
         """
         Calcula el área de la superficie de una esfera.
         
@@ -230,7 +213,7 @@ class Geometria:
         """
         pass
     
-    def volumen_cilindro(self, radio, altura):
+def volumen_cilindro(self, radio, altura):
         """
         Calcula el volumen de un cilindro.
         
@@ -243,7 +226,7 @@ class Geometria:
         """
         pass
     
-    def area_superficie_cilindro(self, radio, altura):
+def area_superficie_cilindro(self, radio, altura):
         """
         Calcula el área de la superficie de un cilindro.
         
@@ -256,7 +239,7 @@ class Geometria:
         """
         pass
     
-    def distancia_entre_puntos(self, x1, y1, x2, y2):
+def distancia_entre_puntos(self, x1, y1, x2, y2):
         """
         Calcula la distancia euclidiana entre dos puntos en un plano 2D.
         
@@ -271,7 +254,7 @@ class Geometria:
         """
         pass
     
-    def punto_medio(self, x1, y1, x2, y2):
+def punto_medio(self, x1, y1, x2, y2):
         """
         Calcula el punto medio entre dos puntos en un plano 2D.
         
@@ -286,7 +269,7 @@ class Geometria:
         """
         pass
     
-    def pendiente_recta(self, x1, y1, x2, y2):
+def pendiente_recta(self, x1, y1, x2, y2):
         """
         Calcula la pendiente de una recta que pasa por dos puntos.
         
@@ -301,7 +284,7 @@ class Geometria:
         """
         pass
     
-    def ecuacion_recta(self, x1, y1, x2, y2):
+def ecuacion_recta(self, x1, y1, x2, y2):
         """
         Obtiene los coeficientes de la ecuación de una recta en la forma Ax + By + C = 0.
         
@@ -316,7 +299,7 @@ class Geometria:
         """
         pass
     
-    def area_poligono_regular(self, num_lados, lado, apotema):
+def area_poligono_regular(self, num_lados, lado, apotema):
         """
         Calcula el área de un polígono regular.
         
@@ -330,7 +313,7 @@ class Geometria:
         """
         pass
     
-    def perimetro_poligono_regular(self, num_lados, lado):
+def perimetro_poligono_regular(self, num_lados, lado):
         """
         Calcula el perímetro de un polígono regular.
         
