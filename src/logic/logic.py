@@ -5,14 +5,10 @@ class Logica:
     
     def AND(self, a, b):
         """
-        Implementa la operación lógica AND.
+    def operacion_and(a: bool, b: bool) -> bool:
+    
+    return a and b
         
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a AND b
         """
         pass 
         
