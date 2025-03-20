@@ -1,8 +1,4 @@
 class Data:
-    """
-    Clase con métodos para operaciones y manipulaciones de estructuras de datos.
-    Incluye implementaciones y algoritmos para arreglos, listas y otras estructuras.
-    """
     
     def invertir_lista(self, lista):
 
@@ -21,8 +17,7 @@ class Data:
        
         return -1
 
-        pass
-    
+
     def eliminar_duplicados(self, lista):
 
         lista_sin_duplicados = []
@@ -55,8 +50,6 @@ class Data:
         k = k % len(lista) 
         
         return lista[-k:] + lista[:-k]
-    
-    pass
     
     def encuentra_numero_faltante(self, lista):
         n = len(lista) + 1
