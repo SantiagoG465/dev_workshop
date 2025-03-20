@@ -1,29 +1,8 @@
 class Logica:
-    """
-    Clase con métodos para realizar operaciones de lógica booleana y algoritmos.
-    """
     
-    def AND(self, a, b):
-        """
-    def operacion_and(a: bool, b: bool) -> bool:
-    
-    return a and b
+    def AND(self, a: bool, b: bool) -> bool:
         
-        """
-        pass 
-        
-        logica = Logica()
-        resultado = logica.AND(True, False)
-        print(resultado) #Salida: False
-        
-    
-    def OR(self, a, b):
-        """
-        def operacion_or(a: bool, b: bool) -> bool:
-        return a or b
- 
-        """
-        pass
+        return a and b
     
     def NOT(self, a):
         """
