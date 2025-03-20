@@ -46,112 +46,31 @@ class Geometria:
     def volumen_cubo(self, lado: float) -> float:
         return lado ** 3
     
-    def area_superficie_cubo(self, lado):
-        """
-        Calcula el área de la superficie de un cubo.
-        
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Área de la superficie del cubo
-        """
-        pass
+    def area_superficie_cubo(self, lado: float) -> float:
+        return 6 * (lado ** 2)
     
-def volumen_esfera(self, radio):
-        """
-        Calcula el volumen de una esfera.
-        
-        Args:
-            radio (float): Radio de la esfera
-            
-        Returns:
-            float: Volumen de la esfera
-        """
-        pass
+    def volumen_esfera(self, radio: float) -> float:
+        return (4/3) * math.pi * (radio ** 3)
+
+    def area_superficie_esfera(self, radio: float) -> float:
+        return 4 * math.pi * (radio ** 2)
     
-def area_superficie_esfera(self, radio):
-        """
-        Calcula el área de la superficie de una esfera.
-        
-        Args:
-            radio (float): Radio de la esfera
-            
-        Returns:
-            float: Área de la superficie de la esfera
-        """
-        pass
+    def volumen_cilindro(self, radio: float, altura: float) -> float:
+        return math.pi * (radio ** 2) * altura
+
+    def area_superficie_cilindro(self, radio: float, altura: float) -> float:
+        return 2 * math.pi * radio * (radio + altura)
     
-def volumen_cilindro(self, radio, altura):
-        """
-        Calcula el volumen de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Volumen del cilindro
-        """
-        pass
+    def distancia_entre_puntos(self, x1: float, y1: float, x2: float, y2: float) -> float:
+        return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+    def punto_medio(self, x1: float, y1: float, x2: float, y2: float) -> tuple:
+        return ((x1 + x2) / 2, (y1 + y2) / 2)
     
-def area_superficie_cilindro(self, radio, altura):
-        """
-        Calcula el área de la superficie de un cilindro.
-        
-        Args:
-            radio (float): Radio de la base del cilindro
-            altura (float): Altura del cilindro
-            
-        Returns:
-            float: Área de la superficie del cilindro
-        """
-        pass
-    
-def distancia_entre_puntos(self, x1, y1, x2, y2):
-        """
-        Calcula la distancia euclidiana entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Distancia entre los dos puntos
-        """
-        pass
-    
-def punto_medio(self, x1, y1, x2, y2):
-        """
-        Calcula el punto medio entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            tuple: Coordenadas (x, y) del punto medio
-        """
-        pass
-    
-def pendiente_recta(self, x1, y1, x2, y2):
-        """
-        Calcula la pendiente de una recta que pasa por dos puntos.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Pendiente de la recta
-        """
-        pass
+    def pendiente_recta(self, x1: float, y1: float, x2: float, y2: float) -> float:
+        if x1 == x2:
+            raise ValueError("La pendiente es indefinida (división por cero).")
+        return (y2 - y1) / (x2 - x1)
     
 def ecuacion_recta(self, x1, y1, x2, y2):
         """
