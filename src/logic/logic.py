@@ -12,31 +12,13 @@ class Logica:
         
         return a ^ b  
     
-    def NAND(self, a, b):
-        """
-        Implementa la operación lógica NAND (NOT AND).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a NAND b
-        """
-        pass
+    def NAND(self, a: bool, b: bool) -> bool:
+       
+        return not (a and b)  # NAND = NOT (a AND b)
     
-    def NOR(self, a, b):
-        """
-        Implementa la operación lógica NOR (NOT OR).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a NOR b
-        """
-        pass
+    def NOR(self, a: bool, b: bool) -> bool:
+       
+        return not (a or b)  # NOR = NOT (a OR b)
     
     def XNOR(self, a, b):
         """
