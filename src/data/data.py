@@ -14,17 +14,13 @@ class Data:
         
     
     def buscar_elemento(self, lista, elemento):
-        """
-        Busca un elemento en una lista y devuelve su índice (o -1 si no existe).
-        Implementación manual sin usar index().
-        
-        Args:
-            lista (list): Lista donde buscar
-            elemento: Elemento a buscar
-            
-        Returns:
-            int: Índice del elemento o -1 si no se encuentra
-        """
+
+        for i in range(len(lista)):
+            if lista[i] == elemento:
+                return i
+       
+        return -1
+
         pass
     
     def eliminar_duplicados(self, lista):
@@ -39,28 +35,21 @@ class Data:
     
     def merge_ordenado(self, lista1, lista2):
         """
-        Combina dos listas ordenadas en una sola lista ordenada.
-        
-        Args:
-            lista1 (list): Primera lista ordenada
-
-            lista1 = [1, 3, 5, 7]
-        
-            lista2 (list): Segunda lista ordenada
-
-            lista2 = [2, 4, 6, 8]
-
-            lista1 = [1, 3, 5, 7]
-
-
-        resultado = combinar_listas_ordenadas(lista1, lista2)
-        print(resultado)  [1, 2, 3, 4, 5, 6, 7, 8]
-
-        Con esta implementación,  eficientemente dos listas ordenadas en una sola lista ordenada.
-
-            
-        Returns:
-            list: Lista combinada y ordenada
+            i, j = 0, 0
+    resultado = []
+    
+    while i < len(lista1) and j < len(lista2):
+        if lista1[i] < lista2[j]:
+            resultado.append(lista1[i])
+            i += 1
+        else:
+            resultado.append(lista2[j])
+            j += 1
+    
+    resultado.extend(lista1[i:])
+    resultado.extend(lista2[j:])
+    
+    return resultado
         """
         pass
     
