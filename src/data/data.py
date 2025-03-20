@@ -78,14 +78,26 @@ class Data:
         
     
     def implementar_pila(self):
-        """
-        Implementa una estructura de datos tipo pila (stack) usando listas.
-        
-        Returns:
-            dict: Diccionario con métodos push, pop, peek y is_empty
-        """
-        pass
-    
+            def __init__(self):
+              self.items = []
+
+    def push(self, elemento):
+        self.items.append(elemento)
+
+    def pop(self):
+        if not self.is_empty():
+            return self.items.pop()
+        return None  # O lanzar una excepción
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[-1]
+        return None
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+
     def implementar_cola(self):
         """
         Implementa una estructura de datos tipo cola (queue) usando listas.
