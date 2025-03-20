@@ -119,14 +119,8 @@ class Data:
         return len(self.items) == 0
         
     
-    def matriz_transpuesta(self, matriz):
-        """
-        Calcula la transpuesta de una matriz.
-        
-        Args:
-            matriz (list): Lista de listas que representa una matriz
-            
-        Returns:
-            list: Matriz transpuesta
-        """
-        pass
+    class Matriz:
+        def matriz_transpuesta(self, matriz: list) -> list:
+            return [[fila[i] for fila in matriz] for i in range(len(matriz[0]))]
+
+    
