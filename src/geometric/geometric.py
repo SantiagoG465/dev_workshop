@@ -1,7 +1,6 @@
 import math
 
 class Geometria:
-    
     def area_rectangulo(self, base: float, altura: float) -> float:
         return base * altura
 

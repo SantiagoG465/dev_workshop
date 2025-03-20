@@ -4,13 +4,9 @@ class Logica:
         
         return a and b
     
-    def NOT(self, a):
-        """
-        def operacion_not(a: bool) -> bool:
+    def NOT(self, a: bool) -> bool:
+        
         return not a
-    
-        """
-        pass
     
     def XOR(self, a, b):
         """
