@@ -99,13 +99,25 @@ class Data:
 
 
     def implementar_cola(self):
-        """
-        Implementa una estructura de datos tipo cola (queue) usando listas.
+            def __init__(self):
+                self.items = []
+
+    def enqueue(self, elemento):
+        self.items.append(elemento)
+
+    def dequeue(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        return None  # O lanzar una excepción
+
+    def peek(self):
+        if not self.is_empty():
+            return self.items[0]
+        return None
+
+    def is_empty(self):
+        return len(self.items) == 0
         
-        Returns:
-            dict: Diccionario con métodos enqueue, dequeue, peek y is_empty
-        """
-        pass
     
     def matriz_transpuesta(self, matriz):
         """
